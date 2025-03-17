@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking App</title>
+    <link rel="stylesheet" href="travel.css">
+<script src="travel.css"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Travel Booking App</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Your Next Adventure</h2>
+        <p>Explore our travel destinations and book your trip today!</p>
+    </section>
+
+    <section id="destinations">
+        <h2>Destinations</h2>
+        <div class="destination">
+            <h3>Paris</h3>
+            <p>The city of lights!</p>
+        </div>
+        <div class="destination">
+            <h3>Tokyo</h3>
+            <p>Experience the blend of tradition and modernity.</p>
+        </div>
+        <!-- Add more destinations as needed -->
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Trip</h2>
+        <form id="booking-form">
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date">
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date">
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10">
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For inquiries, please email us at <a href="mailto:info@travelbooking.com">info@travelbooking.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel Booking App. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
